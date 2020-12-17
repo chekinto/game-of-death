@@ -10,9 +10,9 @@ import Review from './../../src/components/Review';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    backgroundColor: "#f4f4f4",
+    alignItems: "center",
+    justifyContent: "center",
     marginTop: 16,
     marginBottom: 16,
   },
@@ -23,7 +23,26 @@ export const ProductScreen = () => {
     <View style={styles.container}>
       <ProductHeader />
       <ProductReview />
-      <ProductBar title='Usefulness' rating='Really Poor' />
+      <ProductBar
+        title="Usefulness"
+        rating="Really Poor"
+        number={1}
+      />
+      <ProductBar
+        title="Reusability"
+        rating="Poor"
+        number={2}
+      />
+      <ProductBar
+        title="Environmental impact"
+        rating="Really Poor"
+        number={1}
+      />
+      <ProductBar
+        title="Overall"
+        rating="Poor"
+        number={3}
+      />
       <Review />
     </View>
   );

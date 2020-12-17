@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start'
   },
   image: {
-    width: 300,
-    height: 300,
+    width: 150,
+    height: 150,
     resizeMode: 'stretch',
   }
 })
@@ -18,7 +18,6 @@ const ProductReview = () => {
       <Image
         style={styles.image}
         source={require('../../assets/hoopa.jpg')}
-
       />
     </View>
   )
