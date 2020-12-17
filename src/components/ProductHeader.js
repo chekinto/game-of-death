@@ -4,7 +4,7 @@ import { ActivityIndicator } from 'react-native';
 import { Image } from 'react-native-elements';
 
 const ProductHeader = () => {
-  const productName = 'Thumb Wars';
+  const productName = 'Willy Hoola';
   const merchantName = 'Men Kind';
   const merchantLogo =
     'https://voucher.ninja/wp-content/uploads/2017/02/menkind.png';
@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
     padding: 24,
     borderBottomWidth: 16,
     borderBottomColor: '#B5D8D2',
+    flex: 1,
+    height: 60,
   },
   headerCol: {
     width: 'auto',
