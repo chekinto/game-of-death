@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FFF',
     width: '100%',
-    paddingTop: 32,
+    paddingTop: 16,
+    paddingBottom: 16
   },
   text: {
     marginLeft: 16,
@@ -25,20 +26,23 @@ const styles = StyleSheet.create({
   barText: {
     color: '#FFF',
     alignSelf: 'flex-end',
-    paddingRight: 16
-
+    paddingRight: 16,
+    paddingTop: 8,
+    fontSize: 21
   },
   bar: {
     flexDirection: 'column',
-    marginTop: 24,
+    marginTop: 8,
+    marginBottom: 0,
     backgroundColor: '#B00505',
-    height: 32,
+    height: 40,
     width: 100,
     borderRadius: 0,
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 25,
     borderTopLeftRadius: 0,
     borderTopRightRadius: 25,
+    alignItems: 'center'
   }
 })
 
