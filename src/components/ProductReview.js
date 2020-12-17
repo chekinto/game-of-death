@@ -6,9 +6,9 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start'
   },
   image: {
-    width: 150,
-    height: 150,
-    resizeMode: 'stretch',
+    width: 400,
+    height: 380,
+
   }
 })
 

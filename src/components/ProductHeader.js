@@ -4,15 +4,15 @@ import { ActivityIndicator } from 'react-native';
 import { Image } from 'react-native-elements';
 
 const ProductHeader = () => {
-  const productName = 'Willy Hoola';
+  const productName = 'Willy Hoopla';
   const merchantName = 'Men Kind';
   const merchantLogo =
     'https://voucher.ninja/wp-content/uploads/2017/02/menkind.png';
   return (
     <View style={styles.headerContainer}>
       <View style={styles.headerCol}>
-        <Text style={styles.header}>Willy Hoopla}</Text>
-        <Text style={styles.subHeader}>By Men Kind.</Text>
+        <Text style={styles.header}>{productName}</Text>
+        <Text style={styles.subHeader}>By {merchantName}.</Text>
       </View>
       <View style={styles.headerCol}>
         <Image
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 16,
     borderBottomColor: '#B5D8D2',
     flex: 1,
-    height: 60,
+    height: 110,
   },
   headerCol: {
     width: 'auto',
