@@ -1,12 +1,13 @@
-import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text, TextInput, StyleSheet, View } from 'react-native';
 
 const SearchBar = () => {
   return (
-    <View style={styles.searchBar}>
-      <View>
-        <Text style={styles.searchBarText}>Enter URL or scan a product…</Text>
-      </View>
+    <View style={styles.searchBarContainer}>
+      <TextInput
+        style={styles.searchBar}
+        placeholder='Enter URL or scan a product…'
+      ></TextInput>
       <View style={styles.searchIconContainer}>
         <Text style={styles.searchBarIcon}>Go</Text>
       </View>
@@ -15,7 +16,7 @@ const SearchBar = () => {
 };
 
 const styles = StyleSheet.create({
-  searchBar: {
+  searchBarContainer: {
     backgroundColor: '#fff',
     margin: 24,
     zIndex: 999,
@@ -27,6 +28,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignSelf: 'stretch',
+    paddingLeft: 16,
+  },
+  searchBar: {
+    backgroundColor: '#fff',
   },
   searchIconContainer: {
     backgroundColor: '#B5D8D2',
