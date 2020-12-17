@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 export const ProductScreen = () => {
   return (
     <View style={styles.container}>
-        <Text>Product</Text>
+      <Text>Product</Text>
     </View>
   );
 };
