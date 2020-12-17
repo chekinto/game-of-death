@@ -18,7 +18,6 @@ const ProductReview = () => {
       <Image
         style={styles.image}
         source={require('../../assets/hoopa.jpg')}
-
       />
     </View>
   )

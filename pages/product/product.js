@@ -43,7 +43,6 @@ export const ProductScreen = () => {
         rating="Poor"
         number={3}
       />
-      <ProductBar title='Usefulness' rating='Really Poor' />
       <Review />
     </View>
   );

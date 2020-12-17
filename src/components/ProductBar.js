@@ -17,12 +17,16 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FFF',
     width: '100%',
+    paddingTop: 32,
   },
   text: {
-    marginLeft: 32,
+    marginLeft: 16,
   },
   barText: {
-    color: '#FFF'
+    color: '#FFF',
+    alignSelf: 'flex-end',
+    paddingRight: 16
+
   },
   bar: {
     flexDirection: 'column',
