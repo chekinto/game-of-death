@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import DropShadow from "react-native-drop-shadow";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from 'react';
+import DropShadow from 'react-native-drop-shadow';
+import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Deer from '../../assets/deer.svg'
-import Cloud from '../../assets/cloud.svg'
-import String from '../../assets/string.svg'
-import Triangle from '../../assets/triangle.svg'
-import Logo from '../../assets/logo.svg'
+import Deer from '../../assets/deer.svg';
+import Cloud from '../../assets/cloud.svg';
+import String from '../../assets/string.svg';
+import Triangle from '../../assets/triangle.svg';
+import Logo from '../../assets/logo.svg';
+import SearchBar from '../../src/components/SearchBar';
 
 const styles = StyleSheet.create({
   container: {
@@ -34,7 +35,6 @@ const styles = StyleSheet.create({
     width: 325,
     height: 377,
     marginBottom: 40,
-
   },
   cloud: {
     position: 'absolute',
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     right: 0,
     zIndex: 1,
     height: 200,
-    width: '100%'
+    width: '100%',
   },
   logo: {
     color: 'black',
@@ -51,19 +51,24 @@ const styles = StyleSheet.create({
     bottom: 50,
     zIndex: 100,
     width: 1000,
-  }
+  },
 });
-
 
 export const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Triangle style={styles.triangle} />
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
       <String style={styles.string} />
-      <Deer style={styles.deer} />
+      <Deer
+        style={styles.deer}
+        onPress={() => {
+          navigation.navigate('Product');
+        }}
+      />
       <Cloud style={styles.cloud} />
       <Logo style={styles.logo}>The Gift of Death</Logo>
+      <SearchBar />
     </View>
   );
 };
