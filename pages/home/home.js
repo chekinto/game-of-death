@@ -1,12 +1,13 @@
-import React from "react";
-import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Deer from '../../assets/deer.svg'
-import Cloud from '../../assets/cloud.svg'
-import String from '../../assets/string.svg'
-import Triangle from '../../assets/triangle.svg'
-import Logo from '../../assets/logo.svg'
+import Deer from '../../assets/deer.svg';
+import Cloud from '../../assets/cloud.svg';
+import String from '../../assets/string.svg';
+import Triangle from '../../assets/triangle.svg';
+import Logo from '../../assets/logo.svg';
+import SearchBar from '../../src/components/SearchBar';
 
 const styles = StyleSheet.create({
   container: {
@@ -42,26 +43,26 @@ const styles = StyleSheet.create({
     right: 0,
     zIndex: 1,
     height: 200,
-    width: '100%'
+    width: '100%',
   },
   logo: {
     position: 'absolute',
     bottom: 10,
     zIndex: 100,
     width: 50,
-  }
+  },
 });
-
 
 export const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Triangle style={styles.triangle} />
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
       <String style={styles.string} />
       <Deer style={styles.deer} onClick={() => alert('hello')} />
       <Cloud style={styles.cloud} />
       <Logo style={styles.logo} />
+      <SearchBar />
     </View>
   );
 };
