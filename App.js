@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import { HomeScreen } from './pages/home/home';
 
 import * as firebase from 'firebase';
 
 import 'firebase/firestore';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { ProductScreen } from './pages/product/product';
 
 // Initialize Firebase
 const firebaseConfig = {
@@ -26,6 +31,7 @@ if (!firebase.apps.length) {
 
 const dbh = firebase.firestore();
 
+const Stack = createStackNavigator();
 
 export default function App() {
   
@@ -44,14 +50,12 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      {products.map(product => (
-        <>
-          <Text key={product.image}>{JSON.stringify(product)}</Text>
-        </>
-      ))}
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Product" component={ProductScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

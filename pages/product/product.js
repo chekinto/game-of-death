@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 
 
@@ -13,11 +13,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export const HomeScreen = ({ navigation }) => {
+export const ProductScreen = () => {
   return (
     <View style={styles.container}>
-        <Text>Home</Text>
-        <Button title="To Product" onPress={() => { navigation.navigate('Product')}}>To Product</Button>
+        <Text>Product</Text>
     </View>
   );
 };
