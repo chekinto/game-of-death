@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import DropShadow from "react-native-drop-shadow";
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 import Deer from '../../assets/deer.svg'
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     width: 325,
     height: 377,
     marginBottom: 40,
+
   },
   cloud: {
     position: 'absolute',
@@ -45,10 +46,11 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   logo: {
+    color: 'black',
     position: 'absolute',
-    bottom: 10,
+    bottom: 50,
     zIndex: 100,
-    width: 50,
+    width: 1000,
   }
 });
 
@@ -61,7 +63,7 @@ export const HomeScreen = ({ navigation }) => {
       <String style={styles.string} />
       <Deer style={styles.deer} onPress={() => {navigation.navigate('Product')}} />
       <Cloud style={styles.cloud} />
-      <Logo style={styles.logo} />
+      <Logo style={styles.logo}>The Gift of Death</Logo>
     </View>
   );
 };
