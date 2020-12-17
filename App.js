@@ -51,7 +51,7 @@ export default function App() {
     <>
       <NavigationContainer>
         <Stack.Navigator initialRouteName='Home'>
-          <Stack.Screen name='Home' component={HomeScreen} />
+          <Stack.Screen name='The Gift of Death' component={HomeScreen} />
           <Stack.Screen name='Product' component={ProductScreen} />
         </Stack.Navigator>
       </NavigationContainer>

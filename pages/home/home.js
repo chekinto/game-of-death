@@ -67,7 +67,6 @@ export const HomeScreen = ({ navigation }) => {
         style={styles.deer}
       />
       <Cloud style={styles.cloud} />
-      <Logo style={styles.logo}>The Gift of Death</Logo>
       <SearchBar
         navigation={navigation}
       />
