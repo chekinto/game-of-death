@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, TextInput, StyleSheet, View } from 'react-native';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+  
   return (
     <View style={styles.searchBarContainer}>
       <TextInput
         style={styles.searchBar}
         placeholder='Enter URL or scan a product…'
       ></TextInput>
-      <View style={styles.searchIconContainer}>
-        <Text style={styles.searchBarIcon}>Go</Text>
+      <View style={styles.searchIconContainer} >
+        <Text style={styles.searchBarIcon} onPress={() => props.navigation.navigate('Product')}>Go</Text>
       </View>
     </View>
   );
