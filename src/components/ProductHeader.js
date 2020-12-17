@@ -11,8 +11,8 @@ const ProductHeader = () => {
   return (
     <View style={styles.headerContainer}>
       <View style={styles.headerCol}>
-        <Text style={styles.header}>{productName}</Text>
-        <Text style={styles.subHeader}>By {merchantName}.</Text>
+        <Text style={styles.header}>Willy Hoopla}</Text>
+        <Text style={styles.subHeader}>By Men Kind.</Text>
       </View>
       <View style={styles.headerCol}>
         <Image
