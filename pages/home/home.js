@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
   string: {
     position: 'absolute',
     width: 46,
-    height: 280,
-    top: 0,
+    height: 160,
+    top: 32,
     zIndex: 3,
   },
   deer: {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
     width: 325,
     height: 377,
-    marginBottom: 40
+    marginBottom: 40,
   },
   cloud: {
     position: 'absolute',
@@ -48,17 +48,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 10,
     zIndex: 100,
-    width: 200,
+    width: 50,
   }
 });
 
 
 export const HomeScreen = ({ navigation }) => {
   return (
-    <View style={styles.container} >
-      <Text style={styles.text}>Gift of Death</Text>
-      <StatusBar style="auto" />
+    <View style={styles.container}>
       <Triangle style={styles.triangle} />
+      <StatusBar style="auto" />
       <String style={styles.string} />
       <Deer style={styles.deer} onClick={() => alert('hello')} />
       <Cloud style={styles.cloud} />
