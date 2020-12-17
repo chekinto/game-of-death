@@ -59,7 +59,7 @@ export const HomeScreen = ({ navigation }) => {
       <Triangle style={styles.triangle} />
       <StatusBar style="auto" />
       <String style={styles.string} />
-      <Deer style={styles.deer} onClick={() => alert('hello')} />
+      <Deer style={styles.deer} onPress={() => {navigation.navigate('Product')}} />
       <Cloud style={styles.cloud} />
       <Logo style={styles.logo} />
     </View>
