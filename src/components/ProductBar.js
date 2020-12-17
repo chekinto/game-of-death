@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dimensions } from 'react-native';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 const ProductBar = ({ title, rating, number }) => {
   return (

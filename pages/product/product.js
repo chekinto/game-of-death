@@ -31,7 +31,7 @@ export const ProductScreen = () => {
         number={2}
       />
       <ProductBar
-        title="Environental impact:"
+        title="Environmental impact"
         rating="Really Poor"
         number={1}
       />
